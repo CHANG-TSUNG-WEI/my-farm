@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雲林耕讀人家｜農產品行銷平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="StyleSheetcss.css">
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 glass shadow-sm py-4 px-6 flex justify-between items-center">
+        <div class="serif text-2xl font-bold text-green-900 tracking-tight">雲林耕讀人家</div>
+        <div class="hidden md:flex space-x-6 text-stone-600 font-medium text-sm">
+            <a href="#about" class="hover:text-green-800 transition">品牌故事</a>
+            <a href="#shop" class="hover:text-green-800 transition">嚴選商場</a>
+            <a href="#info" class="hover:text-green-800 transition">交易說明</a>
+        </div>
+        <a href="#order" class="bg-green-800 text-white px-5 py-2 rounded-full text-sm hover:scale-105 transition shadow-md">下單預約</a>
+    </nav>
+
+    <header class="hero-bg h-screen flex items-center justify-center text-center">
+        <div data-aos="zoom-out" data-aos-duration="1200">
+            <h1 class="serif text-5xl md:text-8xl mb-6 tracking-widest text-white">田甜蜜蜜</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90 tracking-widest text-white">每個產品的背後，都有一個堅持的故事</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-32 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="serif text-4xl text-green-900 font-bold mb-6">農村孩子的變革</h2>
+                <p class="text-gray-600 leading-loose text-lg mb-6 italic border-l-4 border-yellow-600 pl-6 text-justify">
+                    「我是來自雲林的農村孩子，我將交大電子所實驗室的嚴謹帶回田間，讓每一份農產都能換回應有的價值。」
+                </p>
+                <div class="text-gray-700 leading-loose text-justify space-y-4">
+                    <p>由生產者直接對接消費者，建立起人與土地之間最真實的連結。當你轉身走進廚房，思考著用什麼食材來照顧最愛的家人時，我們深知那份心意其實很純粹——只要健康，就是最好的禮物。</p>
+                    <p>你的舌尖會誠實地告訴你，什麼是土地最天然的饋贈。那種純淨的滋味，其實一直都在身邊。我們堅持在地精神，頂著烈日與泥土對話，只為將這份家鄉的溫暖，原封不動地送上你的餐桌。</p>
+                </div>
+            </div>
+            <div data-aos="fade-left" class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-stone-200">
+                <img src="image/story01.jpg" class="w-full h-full object-cover" alt="品牌故事照片">
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="py-24 bg-stone-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="serif text-4xl text-green-900 mb-4">今日嚴選品項</h2>
+                <p class="text-stone-400 font-mono text-xs tracking-[0.3em] uppercase">Hand-Picked Selection</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div data-aos="fade-up"
+                     onclick="openModal('雲林山線．嚴選北蕉',
+               'NT$ 550 / 箱',
+               '【商品介紹】\n冬季裡，陽光燦爛和熙，加上夜裡的天氣涼冷，使香蕉生長緩慢，果肉質地紮實且香氣濃郁。\n\n【商品規格】\n● 內容：約3.5兩以上/(18-20顆)/盒\n● 保存期限：冷藏 7天\n● 運費計算：產地直送，運費另計，詳見訂購單說明。',
+               ['image/banana01.jpg'])"
+                     class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition p-4 cursor-pointer group">
+
+                    <img src="image/banana01.jpg" class="w-full h-40 object-cover rounded-xl mb-4 group-hover:scale-105 transition">
+                    <h3 class="font-bold text-stone-800">雲林山線．冬蕉</h3>
+                    <p class="text-yellow-700 font-bold mt-2 font-mono text-lg">NT$ 55/斤</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200"
+                     onclick="openModal('雲林在地．帝王柑',
+               'NT$ 55 / 斤',
+               '【商品介紹】\n限定的珍品。帝王柑擁有橘子的外型，卻帶著柳橙的清甜香氣，多汁清甜。皮薄易剝，果肉細緻多汁，甜而不膩且帶有淡淡奶香，是全家人都能輕鬆享用的天然點心。\n\n【商品規格】\n● 內容：約 5 台斤 / 盒\n● 保存期限：常溫 5-7 天，冷藏可延長至 14 天\n● 運費計算：產地直送，運費另計。',
+               ['image/orange01.jpg'])"
+                     class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition p-4 cursor-pointer group">
+
+                    <img src="image/orange01.jpg" class="w-full h-40 object-cover rounded-xl mb-4 group-hover:scale-105 transition">
+                    <h3 class="font-bold text-stone-800">雲林在地．帝王柑</h3>
+                    <p class="text-yellow-700 font-bold mt-2 font-mono text-lg">NT$ 55 / 斤</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400"
+                     onclick="openModal('阿嬤的二手百貨', '隨喜/標價', '惜物愛物，舊物翻新。點開可切換多張珍藏照片。', ['image/grandma01.jpg','image/grandma02.jpg'])"
+                     class="grandma-card p-4 cursor-pointer group">
+                    <div class="grandma-images mb-4">
+                        <img src="image/grandma01.jpg" alt="阿嬤百貨1">
+                        <img src="image/grandma02.jpg" class="second" alt="阿嬤百貨2">
+                    </div>
+                    <h3 class="font-bold italic text-stone-500 text-center">阿嬤的二手百貨</h3>
+                    <p class="text-stone-300 text-xs text-center font-bold underline">點我看珍藏 (可滑動)</p>
+                </div>
+            </div>
+        </div>
+        <section id="info" class="py-24 px-6 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="serif text-4xl text-green-900 mb-4">交易說明：誠信與鮮度的堅持</h2>
+                    <p class="text-stone-400 font-mono text-xs tracking-widest uppercase">Trading Process & Policy</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="text-center space-y-4" data-aos="fade-up">
+                        <div class="w-16 h-16 bg-green-100 text-green-800 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">1</div>
+                        <h3 class="serif text-xl font-bold">線上預約下單</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            透過本平台下方的 Google 表單選購。由於堅持「當季採收」，我們會根據氣候與產量確認訂單。下單後請留意手機簡訊或 E-mail 確認信。
+                        </p>
+                    </div>
+
+                    <div class="text-center space-y-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-green-100 text-green-800 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">2</div>
+                        <h3 class="serif text-xl font-bold">定點限時取貨</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            為縮短農產品離開土地的時間，我們採取「定點面交」。每週固定時段開放取貨（限時 2 小時），確保你拿到的產品依然新鮮。
+                        </p>
+                    </div>
+
+                    <div class="text-center space-y-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-green-100 text-green-800 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">3</div>
+                        <h3 class="serif text-xl font-bold">現場驗貨付款</h3>
+                        <p class="text-gray-700 text-sm font-bold leading-relaxed">
+                            「貨到付款」。請在取貨現場確認產品品質，滿意後再支付現金。這是我們對品質的絕對自信，也是對每一位支持者的誠信承諾。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-stone-50 p-8 rounded-3xl border border-stone-100 grid md:grid-cols-2 gap-8 text-sm" data-aos="fade-up">
+                    <div>
+                        <h4 class="font-bold text-green-900 mb-2">● 關於運費</h4>
+                        <p class="text-gray-600 leading-relaxed">定點取貨免收運費。若需全台低溫配送，運費依箱數與體積計費（約 NT$ 160-220/件），具體費用將於確認訂單時通知。</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-green-900 mb-2">● 退換貨政策</h4>
+                        <p class="text-gray-600 leading-relaxed">農產品具時效性，現場驗貨後恕不接受因個人口味問題退貨。若配送過程中導致嚴重損壞，請於收貨當日拍照聯繫，我們將全額補寄或退款。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="order" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="rounded-3xl overflow-hidden shadow-2xl h-[800px] border border-stone-100">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3df4uEvUguxLl5LnC99kMo7LTd1tuH92pczMcJTS5gJJMJg/viewform?embedded=true" width="100%" height="100%" frameborder="0">載入中…</iframe>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 border-b border-white/10 pb-12 mb-8">
+            <div class="space-y-2">
+                <p class="text-xs uppercase tracking-widest opacity-50 font-bold">聯絡電話</p>
+                <a href="tel:0965563070" class="text-2xl text-white font-medium hover:text-yellow-500 transition">0965-563-070</a>
+            </div>
+            <div class="space-y-2">
+                <p class="text-xs uppercase tracking-widest opacity-50 font-bold">聯絡信箱</p>
+                <a href="mailto:ctw.ee14@nycu.edu.tw" class="text-xl text-white font-mono hover:text-yellow-500 transition underline">ctw.ee14@nycu.edu.tw</a>
+            </div>
+        </div>
+        <div class="text-[10px] tracking-widest opacity-30">
+            <p>National Yang Ming Chiao Tung University | Master Project</p>
+            <p class="mt-2">© 2026 雲林耕讀人家 | ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <div id="productModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl relative">
+            <div class="relative h-72 bg-stone-100 group">
+                <div id="modalImage" class="w-full h-full bg-cover bg-center"></div>
+                <div id="modalNav" class="absolute inset-0 flex justify-between items-center px-4 hidden">
+                    <button onclick="changeImg(-1)" class="bg-white/90 p-2 rounded-full shadow-lg hover:bg-green-800 hover:text-white transition">❮</button>
+                    <button onclick="changeImg(1)" class="bg-white/90 p-2 rounded-full shadow-lg hover:bg-green-800 hover:text-white transition">❯</button>
+                </div>
+            </div>
+            <div class="p-8 text-center space-y-4">
+                <h3 id="modalTitle" class="serif text-3xl text-green-900 font-bold"></h3>
+                <p id="modalPrice" class="text-xl font-bold text-yellow-700"></p>
+                <div class="bg-stone-50 p-6 rounded-2xl text-left border border-stone-100">
+                    <p id="modalDesc" class="text-gray-700 leading-relaxed"></p>
+                </div>
+                <div class="flex gap-4 pt-4">
+                    <button onclick="closeModal()" class="flex-1 bg-green-800 text-white py-4 rounded-xl font-bold hover:bg-green-900 transition">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+        let currentImgIndex = 0;
+        let activeImages = [];
+
+        function openModal(title, price, desc, imgArray) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalPrice').innerText = price;
+
+            // 將 \n 換行符號轉為網頁可讀的 <br> 標籤
+            document.getElementById('modalDesc').innerHTML = desc.replace(/\n/g, '<br>');
+
+            activeImages = imgArray || [];
+            currentImgIndex = 0;
+            updateModalView();
+            document.getElementById('productModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateModalView() {
+            const imgDiv = document.getElementById('modalImage');
+            const nav = document.getElementById('modalNav');
+            imgDiv.style.backgroundImage = `url('${activeImages[currentImgIndex]}')`;
+            if (activeImages.length > 1) { nav.classList.remove('hidden'); }
+            else { nav.classList.add('hidden'); }
+        }
+
+        function changeImg(dir) {
+            currentImgIndex = (currentImgIndex + dir + activeImages.length) % activeImages.length;
+            updateModalView();
+        }
+
+        function closeModal() {
+            document.getElementById('productModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // 點擊 Modal 背景也可關閉
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('productModal')) { closeModal(); }
+        }
+    </script>
+</body>
+</html>
